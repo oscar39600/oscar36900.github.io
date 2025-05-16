@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eedf9d;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.link-container {
+    display: inline-block;
+    width: 150px; 
+    margin: 20px;
+    text-align: center;
+}
+
+.link-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+    border-radius: 10px;
+}
+
+.link-container a {
+    display: block;
+    padding: 10px;
+    background-color: #ff4b4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.link-container a:hover {
+    background-color: #ff4444;
+}

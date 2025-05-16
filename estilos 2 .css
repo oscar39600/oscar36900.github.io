@@ -1,0 +1,47 @@
+/* estilos 2.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ac4242;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.link-container {
+    background-color: #eedf9d;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(3, 248, 126, 0.1);
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.link-container img {
+    width: 150px; /* Ancho fijo para todas las imágenes */
+    height: 150px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.link-container p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.cuadrado {
+    width: 100vw; /* Ancho del cuadrado */
+    height: 310px; /* Alto del cuadrado */
+    background-color: #000000; /* Color de fondo del cuadrado (opcional) */
+    color: rgb(124, 28, 28); /* Color del texto dentro del cuadrado */
+    padding: 50px; /* Espacio entre el texto y los bordes del cuadrado */
+    text-align: center; /* Centrar el texto */
+    border: 1px solid black; /* Borde para visualizar el cuadrado (opcional) */
+}

@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ac4242;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.text-1 {
+    color: #ffea8d;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.text-2 {
+    color: #e2e2e2;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+.additional-image img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.additional-image-2 img {
+    width: 100vw; /* Ancho fijo para todas las imágenes */
+    margin-top: 250px;
+}
+
+.additional-image-2 a {
+    display: block;
+    padding: 10px;
+    background-color: #e4cc9fde;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 9px;
+    margin-top: 15px;
+}
+
+.additional-image-2 a:hover {
+    background-color: #521c12;
+    
+}
+
+.link-container {
+    display: inline-block;
+    width: 150px;
+    margin: 20px;
+    text-align: center;
+}
+
+.link-container img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 150px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
+    border-radius: 10px;
+}
+
+.link-container a {
+    display: block;
+    padding: 10px;
+    background-color: #e4cc9fde;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.link-container a:hover {
+    background-color: #521c12;
+}
+
+.additional-image {
+    margin-top: 40px; /* Espacio adicional entre los productos y la nueva imagen*/
+}
