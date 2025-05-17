@@ -38,10 +38,12 @@ body {
 
 .cuadrado {
     width: 100vw; /* Ancho del cuadrado */
-    height: 310px; /* Alto del cuadrado */
+    height: 24vw; /* Alto del cuadrado */
     background-color: #000000; /* Color de fondo del cuadrado (opcional) */
-    color: rgb(124, 28, 28); /* Color del texto dentro del cuadrado */
+    color: rgb(255, 255, 255); /* Color del texto dentro del cuadrado */
     padding: 50px; /* Espacio entre el texto y los bordes del cuadrado */
     text-align: center; /* Centrar el texto */
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 1px solid black; /* Borde para visualizar el cuadrado (opcional) */
 }
