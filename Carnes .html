@@ -6,58 +6,75 @@
     <link rel="stylesheet" href="estilos 2 .css">
 </head>
 <body>
-    <div class="link-container">
-        <img src="b.webp" alt="Bistec 1k">
-        <p class="text-1">Bistec 1k a $190.00</p>
+    <input type="text" id="search" placeholder="Buscar productos...">
+    <div id="products">
+        <div class="link-container">
+            <img src="b.webp" alt="Bistec 1k">
+            <p class="text-1">Bistec 1k a $190.00</p>
+        </div>
+        <div class="link-container">
+            <img src="C.webp" alt="Chuleta 1K">
+            <p class="text-2">Chuleta aumada 1K a $140.00</p>
+        </div>
+        <div class="link-container">
+            <img src="l.jpeg" alt="Longaniza 1k">
+            <p class="text-3">Longaniza 1k a $140.00</p>
+        </div>
+        <div class="link-container">
+            <img src="m.jpeg" alt="Molida 1k">
+            <p class="text-4">Molida 1k a $170.00</p>
+        </div>
+        <div class="link-container">
+            <img src="costilla asar.webp" alt="Costilla para asar 1k">
+            <p class="text-5">Costilla para asar 1k a $190.00</p>
+        </div>
+        <div class="link-container">
+            <img src="aguja.webp" alt="aguja norteña 1k">
+            <p class="text-6">aguja norteña 1k a $170.00</p>
+        </div>
+        <div class="link-container">
+            <img src="arrachera.webp" alt="Arrachera 1k">
+            <p class="text-7">Arrachera 1k a $180.00</p>
+        </div>
+        <div class="link-container">
+            <img src="COSTILLADEPUERCO.webp" alt="Costilla de puerco 1k">
+            <p class="text-8">Costilla de puerco 1k a $140.00</p>
+        </div>
+        <div class="link-container">
+            <img src="macisa.jpg" alt="Maciza de puerco 1k">
+            <p class="text-9">Maciza de puerco 1k a $140.00</p>
+        </div>
+        <div class="link-container">
+            <img src="espinazo.webp" alt="Espinazo 1k">
+            <p class="text-10">Espinazo 1k a $130.00</p>
+        </div>
+        <div class="link-container">
+            <img src="surtida puerco.jpg" alt="Surtida de puerco 1k">
+            <p class="text-11">Surtida de puerco 1k a $130.00</p>
+        </div>
+        <div class="link-container">
+            <img src="surtida res.jpeg" alt="Surtida de res 1k">
+            <p class="text-11">Surtida de res 1k a $140.00</p>
+        </div>
     </div>
-    <div class="link-container">
-        <img src="C.webp" alt="Chuleta 1K">
-        <p class="text-2">Chuleta aumada 1K a $140.00</p>
-    </div>
-    <div class="link-container">
-        <img src="l.jpeg" alt="Longaniza 1k">
-        <p class="text-3">Longaniza 1k a $140.00</p>
-    </div>
-    <div class="link-container">
-        <img src="m.jpeg" alt="Molida 1k">
-        <p class="text-4">Molida 1k a $170.00</p>
-    </div>
-    <div class="link-container">
-        <img src="costilla asar.webp" alt="Costilla para asar 1k">
-        <p class="text-5">Costilla para asar 1k a $190.00</p>
-    </div>
-    <div class="link-container">
-        <img src="aguja.webp" alt="aguja norteña 1k">
-        <p class="text-6">aguja norteña 1k a $170.00</p>
-    </div>
-    <div class="link-container">
-        <img src="arrachera.webp" alt="Arrachera 1k">
-        <p class="text-7">Arrachera 1k a $180.00</p>
-    </div>
-    <div class="link-container">
-        <img src="COSTILLADEPUERCO.webp" alt="Costilla de puerco 1k">
-        <p class="text-8">Costilla de puerco 1k a $140.00</p>
-    </div>
-    <div class="link-container">
-        <img src="macisa.jpg" alt="Maciza de puerco 1k">
-        <p class="text-9">Maciza de puerco 1k a $140.00</p>
-    </div>
-    <div class="link-container">
-        <img src="espinazo.webp" alt="Espinazo 1k">
-        <p class="text-10">Espinazo 1k a $130.00</p>
-    </div>
-    <div class="link-container">
-        <img src="surtida puerco.jpg" alt="Surtida de puerco 1k">
-        <p class="text-11">Surtida de puerco 1k a $130.00</p>
-    </div>
-    <div class="link-container">
-        <img src="surtida res.jpeg" alt="Surtida de res 1k">
-        <p class="text-11">Surtida de res 1k a $140.00</p>
-    </div>
-    <div class="cuadrado">   
+    <div class="cuadrado">
         COMPARTE LA PÁGINA A TODOS TUS CONOCIDOS Y DISFRUTEN MAGNÍFICA CARNE, QUE TENGAN UN EXCELENTE DÍA :D
     </div>
 
+    <script>
+        document.getElementById('search').addEventListener('keyup', function() {
+            let searchQuery = this.value.toLowerCase();
+            let products = document.querySelectorAll('.link-container');
 
+            products.forEach(function(product) {
+                let productName = product.querySelector('p').textContent.toLowerCase();
+                if (productName.includes(searchQuery)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Info de yogurts y Gelatinas</title>
+    <title>Info de yogurts, Gelatinas y más</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos 2 .css">
 </head>
 <body>
+    <input type="text" id="search" placeholder="Buscar productos...">
+    <div id="products">
     <div class="link-container">
         <img src="danup.jpeg" alt="Danup 220g">
         <p class="text-1">Danup 220g a $16.00</p>
@@ -32,7 +34,7 @@
     </div>
     <div class="link-container">
         <img src="Danonino Fresa 336 g.jpg" alt="Danonino 336g">
-        <p class="text-7">Danonino 336g a $10.00</p>
+        <p class="text-7">Danonino grande 336g a $10.00</p>
     </div>
     <div class="link-container">
         <img src="queso a.jpeg" alt="Queso Amarillo">
@@ -69,8 +71,23 @@
     <div class="cuadrado">   
         COMPARTE LA PAGINA A TODOS TUS CONOCIDOS Y DISFRUTEN MAGNIFICA CARNE, QUE TENGAN UN EXELENTE DIA :D
     </div>
+    </div>
 
+    <script>
+    document.getElementById('search').addEventListener('keyup', function() {
+        let searchQuery = this.value.toLowerCase();
+        let products = document.querySelectorAll('.link-container');
 
+        products.forEach(function(product) {
+            let productName = product.querySelector('p').textContent.toLowerCase();
+            if (productName.includes(searchQuery)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>

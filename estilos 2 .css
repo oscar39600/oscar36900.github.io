@@ -11,10 +11,31 @@ body {
     gap: 20px;
 }
 
+#search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e27d1f;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(102, 11, 11, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+#search {
+    padding: 10px;
+    width: 300px;
+}
+#products {
+    margin-top: 50px; /* Ajusta este valor según la altura de tu barra de búsqueda */
+}
+
 .link-container {
+    margin: 15px;
     background-color: #eedf9d;
     border: 1px solid #e2e2e2;
     border-radius: 20px;
+    display: inline-block;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(3, 248, 126, 0.1);
     width: 200px;
@@ -38,7 +59,7 @@ body {
 
 .cuadrado {     
     width: 100vw; /* Ancho del cuadrado */     
-    height: 24vw; /* Alto del cuadrado */     
+    height: 80vw; /* Alto del cuadrado */     
     background-color: #000000; /* Color de fondo del cuadrado (opcional) */     
     color: rgb(255, 255, 255); /* Color del texto dentro del cuadrado */     
     padding: 50px; /* Espacio entre el texto y los bordes del cuadrado */     

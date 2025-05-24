@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="estilos 2 .css">
 </head>
 <body>
+    <input type="text" id="search" placeholder="Buscar productos...">
+    <div id="products">
     <div class="link-container">
         <img src="maiz.webp" alt="Maiz pozolero">
         <p class="text-1">Maiz pozolero 800g a $45.00</p>
@@ -29,6 +31,22 @@
     <div class="cuadrado">   
         COMPARTE LA PAGINA A TODOS TUS CONOCIDOS Y DISFRUTEN MAGNIFICA CARNE, QUE TENGAN UN EXELENTE DIA :D
     </div>
+    </div>
+    <script>
+        document.getElementById('search').addEventListener('keyup', function() {
+            let searchQuery = this.value.toLowerCase();
+            let products = document.querySelectorAll('.link-container');
+
+            products.forEach(function(product) {
+                let productName = product.querySelector('p').textContent.toLowerCase();
+                if (productName.includes(searchQuery)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
