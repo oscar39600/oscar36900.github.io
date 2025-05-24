@@ -1,35 +1,77 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #eedf9d;
+    background-color: #ac4242;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#search-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e27d1f;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(102, 11, 11, 0.1);
+    z-index: 1000;
     text-align: center;
+}
+
+#search {
+    padding: 5px;
+    width: 300px;
+}
+
+#products {
+    margin-top: 50px; /* Ajusta este valor según la altura de tu barra de búsqueda */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .link-container {
+    margin: 15px;
+    background-color: #eedf9d;
+    border: 1px solid #e2e2e2;
+    border-radius: 20px;
     display: inline-block;
-    width: 150px; 
-    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(3, 248, 126, 0.1);
+    width: 200px;
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Asegura que el relleno y el borde estén incluidos en el ancho total */
 }
 
 .link-container img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 150px; /* Establece una altura fija para todas las imágenes */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionar */
-    border-radius: 10px;
+    width: 150px; /* Ancho fijo para todas las imágenes */
+    height: 150px; /* Alto fijo para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 10px;
 }
 
-.link-container a {
-    display: block;
-    padding: 10px;
-    background-color: #ff4b4b;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
+.link-container p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
 }
 
-.link-container a:hover {
-    background-color: #ff4444;
+.cuadrado {
+    width: 100vw; /* Ancho del cuadrado */
+    height: 80vw; /* Alto del cuadrado */
+    background-color: #000000; /* Color de fondo del cuadrado (opcional) */
+    color: rgb(255, 255, 255); /* Color del texto dentro del cuadrado */
+    padding: 50px; /* Espacio entre el texto y los bordes del cuadrado */
+    text-align: center; /* Centrar el texto */
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black; /* Borde para visualizar el cuadrado (opcional) */
 }
