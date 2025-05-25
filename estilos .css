@@ -66,7 +66,7 @@ body {
 
 .cuadrado {
     width: 100vw; /* Ancho del cuadrado */
-    height: 80vw; /* Alto del cuadrado */
+    height: 125vw; /* Alto del cuadrado */
     background-color: #000000; /* Color de fondo del cuadrado (opcional) */
     color: rgb(255, 255, 255); /* Color del texto dentro del cuadrado */
     padding: 50px; /* Espacio entre el texto y los bordes del cuadrado */
